@@ -23,7 +23,7 @@ function [] = scatter_plot_with_centroids(obj, current_iteration)
 
         plot_data = [obj.Data.(1) obj.Data.(2)]; 
         class_scatter_plot(obj, plot_data , obj.Data.Centroid_status, [x_lims; y_lims]);
-        scatter(obj.Centroids(:,1), obj.Centroids(:,2), 350, 'LineWidth',10,'MarkerFaceColor', 'magenta', 'Marker', 'X');
+        scatter(obj.Centroids(:,1), obj.Centroids(:,2), 350, 'LineWidth',20,'MarkerFaceColor', 'magenta', 'Marker', 'X');
    
     elseif obj.Dimensions == 3
         plot_data = [obj.Data.(1) obj.Data.(2) obj.Data.(3)];

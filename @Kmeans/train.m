@@ -23,6 +23,7 @@ function [Result_classes, inertia] = train(obj, max_iter, plot)
         end
     end
 
+
     if obj.Plot_status == true
         f = figure('Name','K Means Algorithm', 'NumberTitle','off');
         f.Position = [100 100 740 600];

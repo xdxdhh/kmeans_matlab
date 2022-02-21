@@ -4,9 +4,9 @@ function [] = kmeans_main()
 
     cd('/home/xdxdhh/skola/MPT/k_means/k_means_class_version')
 
-    k_means = Kmeans(data, 3, 5); %data, pocet clusteru, pocet iteraci
+    k_means = Kmeans(data, 3, 5); %data, number of clusters, number of iterations
 
-    [res, inertia] = k_means.train(3, false); %pocet pokusu pro vyber nejlepsiho, true/false obrazek
+    [res, inertia] = k_means.train(3, false); %n. of iterations for choosing the best onw, true/false picture
 
     disp(res);
     disp("inertia:");
